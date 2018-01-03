@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 0 30px;
+        }
+        .ccc {
+            height: 30px;
+            width: 80px;
+        }
+        .special {
+            color: red;
+        }
+        .flex {
+            display: flex;
+            height: 40px;
+            background-color: #cccccc;
+            overflow: hidden;
+        }
+        .flex div {
+            float: left;
+        }
+        .flex1 {
+            flex: 1;
+            background-color: hotpink;
+        }
+        .flex2 {
+            flex: 2;
+            background-color: deepskyblue;
+        }
+        .flex3 {
+            flex: 3;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<h2> Html </h2>
+<h3> 行内元素和块级元素 </h3>
+<div id="box">
+    <button class="ccc">btn1</button>
+    <button>btn2</button>
+    <button>btn3</button><br><br><hr><br>
+
+    <a href="javascript:;" class="link">这是a标签，是行内元素</a>
+</div>
+
+
+
+<p>这是p标签，<span style="color: red;font-size: 12px;">是块级元素</span></p>
+<p class="explain">这是p标签，是块级元素</p>
+
+
+
+<h2 class="special" style="color: pink;"> 样式特殊性 </h2>
+
+
+<div class="flex">
+    <div class="flex1"></div>
+    <div class="flex2"></div>
+    <div class="flex3"></div>
+</div>
+
+</body>
+</html>
