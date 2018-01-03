@@ -13,7 +13,7 @@
         	  .box {
         	  	 width: 560px;
         	  	 height: 300px;
-        	  	 margin:  50px auto;
+        	  	 margin:  200px auto;
         	  	 position: relative;
         	  }
 
@@ -38,23 +38,31 @@
         	  }
         	  .before {
         	  	  background: url(img/1.jpg) no-repeat;
-        	  	  transform: translateZ(150px);
+        	  	  transform: translateZ(260px);
         	  }
 
         	  .back {
         	  	 background: url(img/3.jpg) no-repeat;
-        	  	 transform: rotateX(180deg) translateZ(150px);
+        	  	 transform: rotateX(300deg) translateZ(260px);
         	  }
 
         	  .top {
         	  	 background: url(img/2.jpg) no-repeat;
-        	  	 transform: rotateX(90deg) translateZ(150px);
+        	  	 transform: rotateX(240deg) translateZ(260px);
         	  }
 
         	  .bottom {
         	  	 background: url(img/4.jpg) no-repeat;
-        	  	 transform: rotateX(-90deg) translateZ(150px);
+        	  	 transform: rotateX(180deg) translateZ(260px);
         	  }
+			  .other {
+				  background: url(img/55.png) no-repeat;
+				  transform: rotateX(120deg) translateZ(260px);
+			  }
+			  .aaa {
+				  background: url(img/66.png) no-repeat;
+				  transform: rotateX(60deg) translateZ(260px);
+			  }
 
         	  .btns a {
         	  	 width: 40px;
@@ -96,30 +104,40 @@
     	   	   	 	<span class="back"></span>
     	   	   	 	<span class="top"></span>
     	   	   	 	<span class="bottom"></span>
+    	   	   	 	<span class="other"></span>
+    	   	   	 	<span class="aaa"></span>
     	   	   	 </li>
     	   	   	 <li>
     	   	   	 	<span class="before"></span>
     	   	   	 	<span class="back"></span>
     	   	   	 	<span class="top"></span>
     	   	   	 	<span class="bottom"></span>
+					 <span class="other"></span>
+					 <span class="aaa"></span>
     	   	   	 </li>
     	   	   	 <li>
     	   	   	 	<span class="before"></span>
     	   	   	 	<span class="back"></span>
     	   	   	 	<span class="top"></span>
     	   	   	 	<span class="bottom"></span>
+    	   	   	 	<span class="other"></span>
+					 <span class="aaa"></span>
     	   	   	 </li>
     	   	   	 <li>
     	   	   	 	<span class="before"></span>
     	   	   	 	<span class="back"></span>
     	   	   	 	<span class="top"></span>
     	   	   	 	<span class="bottom"></span>
+    	   	   	 	<span class="other"></span>
+					 <span class="aaa"></span>
     	   	   	 </li>
     	   	   	 <li>
     	   	   	 	<span class="before"></span>
     	   	   	 	<span class="back"></span>
     	   	   	 	<span class="top"></span>
     	   	   	 	<span class="bottom"></span>
+    	   	   	 	<span class="other"></span>
+					 <span class="aaa"></span>
     	   	   	 </li>
     	   	   </ul>
 
@@ -140,7 +158,7 @@
     	   		    if(flag){
     	   		    	n++;
 	    	   			for(var i=0;i<li.length;i++){
-	    	   				 li[i].style.transform="rotateX("+n*90+"deg)";
+	    	   				 li[i].style.transform="rotateX("+n*60+"deg)";
 	    	   				 li[i].style.transition="all 1s "+0.2*i+"s linear";
 	    	   			}
 	    	   			flag=false;
@@ -150,7 +168,7 @@
     	   		    if(flag){
     	   		    	n--;
 	    	   			for(var i=0;i<li.length;i++){
-	    	   				 li[i].style.transform="rotateX("+n*90+"deg)";
+	    	   				 li[i].style.transform="rotateX("+n*60+"deg)";
 	    	   				 li[i].style.transition="all 1s "+0.2*i+"s linear";
 	    	   			}
 	    	   			flag=false;
